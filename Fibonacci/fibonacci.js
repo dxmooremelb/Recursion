@@ -1,19 +1,19 @@
-// function fibs(n) {
-//   const array = [];
+function fibs(n) {
+  const array = [];
 
-//   for (i = 0; i < n; i++) {
-//     if (i === 0 || i === 1) {
-//       array.push(i);
-//     } else {
-//       newnum = array[i - 1] + array[i - 2];
-//       array.push(newnum);
-//     }
-//   }
+  for (i = 0; i < n; i++) {
+    if (i === 0 || i === 1) {
+      array.push(i);
+    } else {
+      newnum = array[i - 1] + array[i - 2];
+      array.push(newnum);
+    }
+  }
 
-//   console.log(array);
-// }
+  console.log(array);
+}
 
-// fibs(8);
+fibs(8);
 
 function fibsRec(n, array) {
   if (!array) {
