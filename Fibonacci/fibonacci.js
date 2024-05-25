@@ -21,7 +21,7 @@ function fibsRec(n, array) {
   } else if (n === 0) {
     return console.log(array);
   } else {
-    const newArray = array.slice(0, array.length);
+    const newArray = array.slice();
     newArray.push(array[array.length - 1] + array[array.length - 2]);
     fibsRec(n - 1, newArray);
   }
